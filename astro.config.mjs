@@ -5,6 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://blog2.nagopy.com/',
+	site: 'https://www.nagopy.com/',
 	integrations: [mdx(), sitemap()],
 });
