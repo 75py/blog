@@ -2,7 +2,7 @@
 title: '積ん読：プロと読み解くモバイル最前線～アプリを支える最新技術～'
 description: ''
 pubDate: '2023-08-27'
-updatedDate: '2023-08-29'
+updatedDate: '2023-08-30'
 ---
 
 ### 本の情報
