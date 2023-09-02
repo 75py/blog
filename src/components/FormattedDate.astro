@@ -1,9 +1,5 @@
 ---
-interface Props {
-	date: Date;
-}
-
-const { date } = Astro.props;
+const date = Astro.props.date instanceof Date ? Astro.props.date : new Date(Astro.props.date)
 ---
 
 <time datetime={date.toISOString()}>
