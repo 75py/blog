@@ -1,5 +1,5 @@
 ---
-title: '記事ネタ：GitHubのPRコメントを一括取得する'
+title: '記事ネタ：GitHubのPRコメントを一括取得してChatGPTで評価する'
 description: ''
 pubDate: '2023-09-03'
 ---
