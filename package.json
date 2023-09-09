@@ -14,5 +14,8 @@
     "@astrojs/rss": "^2.4.4",
     "@astrojs/sitemap": "^2.0.2",
     "astro": "^3.0.5"
+  },
+  "devDependencies": {
+    "@astrojs/partytown": "^2.0.0"
   }
 }
