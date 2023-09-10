@@ -2,6 +2,7 @@
 title: '積ん読消化：Compose Recette アプリ開発の新スタンダードを学ぼう'
 description: ''
 pubDate: '2023-08-27'
+heroImage: '../../../../images/categories/books.png'
 ---
 
 ### 本の情報

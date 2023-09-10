@@ -2,6 +2,7 @@
 title: 'Open Interpreterの体験がすごく良い（けどGPT-4 APIが高い）'
 description: ''
 pubDate: '2023-09-09'
+heroImage: '../../../../images/categories/ai.png'
 ---
 
 ### Open Interpreterとは

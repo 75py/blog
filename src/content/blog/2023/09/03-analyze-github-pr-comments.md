@@ -2,6 +2,7 @@
 title: '記事ネタ：GitHubのPRコメントを一括取得してChatGPTで評価する'
 description: ''
 pubDate: '2023-09-03'
+heroImage: '../../../../images/categories/programming.png'
 ---
 
 PRレビューコメントを一括取得して、メンバーごとにレビューコメントの評価をしたい。

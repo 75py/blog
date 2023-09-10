@@ -3,6 +3,7 @@ title: '積ん読消化：プロと読み解くモバイル最前線～アプリ
 description: ''
 pubDate: '2023-08-27'
 updatedDate: '2023-09-02'
+heroImage: '../../../../images/categories/books.png'
 ---
 
 ### 本の情報
