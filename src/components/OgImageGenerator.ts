@@ -7,19 +7,25 @@ import {Resvg} from "@resvg/resvg-js";
 export class OgImageGenerator {
 
     async generate(title: string, heroImage: string) {
-        const svg = await this.createOpgSvg(title, this.normalizePath(heroImage));
+        const svg = await this.createOpgSvg(title, this.optimizePath(heroImage));
         return new Resvg(svg).render().asPng();
     }
 
-    private normalizePath(path: string) {
-        let normalized = path;
-        if (normalized.startsWith('/@fs')) {
-            normalized = normalized.slice('/@fs'.length);
+    private optimizePath(path: string) {
+        if (import.meta.env.MODE === 'production') {
+            return resolve(process.cwd(), 'dist' + path);
+        } else if (import.meta.env.MODE === 'development') {
+            let normalized = path;
+            if (normalized.startsWith('/@fs')) {
+                normalized = normalized.slice('/@fs'.length);
+            }
+            if (normalized.includes('?')) {
+                normalized = normalized.split('?')[0];
+            }
+            return normalized;
+        } else {
+            throw new Error(`Unexpected MODE: ${import.meta.env.MODE}`);
         }
-        if (normalized.includes('?')) {
-            normalized = normalized.split('?')[0];
-        }
-        return normalized;
     }
 
     private async encodeImageToBase64(filePath: string) {
