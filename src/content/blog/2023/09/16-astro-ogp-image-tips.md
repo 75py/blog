@@ -3,6 +3,8 @@ title: 'AstroでOGP画像を作成する際の参考情報'
 description: ''
 pubDate: '2023-09-16'
 heroImage: '../../../../images/categories/programming.png'
+tags:
+  - Astro
 ---
 
 Astroのブログで、Integrationsを使ってOGP画像を作成するようにした。

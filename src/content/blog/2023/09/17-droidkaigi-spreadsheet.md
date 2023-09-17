@@ -3,6 +3,9 @@ title: 'チームメンバーとDroidKaigi 2023のセッションを見たり、
 description: ''
 pubDate: '2023-09-17'
 heroImage: '../../../../images/categories/android.png'
+tags:
+  - DroidKaigi
+  - Android
 ---
 
 DroidKaigi 2023でセッションを見たり、感想を書いたりするスプレッドシートテンプレートを作った。  

@@ -3,6 +3,9 @@ title: '積ん読消化：INSIDE [技術のヒミツ]'
 description: ''
 pubDate: '2023-08-27'
 heroImage: '../../../../images/categories/books.png'
+tags:
+  - Android
+  - 読書
 ---
 
 ### 本の情報

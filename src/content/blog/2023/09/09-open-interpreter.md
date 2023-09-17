@@ -3,6 +3,13 @@ title: 'Open Interpreterの体験がすごく良い（けどGPT-4 APIが高い�
 description: ''
 pubDate: '2023-09-09'
 heroImage: '../../../../images/categories/ai.png'
+tags:
+  - Open Interpreter
+  - GPT-4
+  - GPT-3.5
+  - Code-Llama
+  - OpenAI
+  - AI
 ---
 
 ### Open Interpreterとは

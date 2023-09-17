@@ -3,6 +3,9 @@ title: '積ん読消化：Compose Recette アプリ開発の新スタンダー�
 description: ''
 pubDate: '2023-08-27'
 heroImage: '../../../../images/categories/books.png'
+tags:
+  - Android
+  - 読書
 ---
 
 ### 本の情報

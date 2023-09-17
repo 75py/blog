@@ -3,6 +3,10 @@ title: '積ん読消化：アンドロイド・アンサンブル'
 description: ''
 pubDate: '2023-08-27'
 heroImage: '../../../../images/categories/books.png'
+tags:
+  - Android
+  - Kotlin
+  - 読書
 ---
 
 ### 本の情報

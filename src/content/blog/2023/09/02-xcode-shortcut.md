@@ -3,6 +3,9 @@ title: 'Xcodeでも[Shift]+[Shift]でSearch Everywhereしたい'
 description: ''
 pubDate: '2023-09-02'
 heroImage: '../../../../images/categories/programming.png'
+tags:
+  - Xcode
+  - Karabiner-Elements
 ---
 
 Zennの記事を書いた。  

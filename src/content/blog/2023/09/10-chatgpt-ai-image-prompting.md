@@ -3,6 +3,9 @@ title: 'ChatGPTでプロンプトを用意して、DALL-Eで画像を作って�
 description: ''
 pubDate: '2023-09-10'
 heroImage: '../../../../images/categories/ai.png'
+tags:
+  - ChatGPT
+  - DALL-E
 ---
 
 ### 参考にしたページ

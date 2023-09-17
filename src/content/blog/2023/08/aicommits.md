@@ -3,6 +3,10 @@ title: 'AI Commitsがとにかく便利'
 description: ''
 pubDate: '2023-08-30'
 heroImage: '../../../../images/categories/ai.png'
+tags:
+  - AI
+  - OpenAI
+  - aicommits
 ---
 
 ### AI Commits
