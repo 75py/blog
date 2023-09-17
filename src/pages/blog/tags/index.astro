@@ -1,0 +1,74 @@
+---
+import BaseHead from '../../../components/BaseHead.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import {SITE_TITLE, SITE_DESCRIPTION} from '../../../consts';
+import {CollectionEntry, getCollection} from 'astro:content';
+import FormattedDate from '../../../components/FormattedDate.astro';
+import {Image} from 'astro:assets';
+
+const posts = (await getCollection('blog')).sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+class Tag {
+    name: string;
+    posts: CollectionEntry<any>
+}
+const postTags: Tag[] = []
+posts.forEach(post => {
+    post.data.tags?.forEach(tag => {
+        const tagIndex = postTags.findIndex(t => t.name === tag)
+        if (tagIndex === -1) {
+            postTags.push({
+                name: tag,
+                posts: [post]
+            })
+        } else {
+            postTags[tagIndex].posts.push(post)
+        }
+    })
+})
+postTags.sort((a, b) => a.name.localeCompare(b.name))
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}/>
+    <style>
+        main {
+            width: 960px;
+        }
+
+        ul li a:hover h4,
+        ul li a:hover .date {
+            color: rgb(var(--accent));
+        }
+
+        ul li * {
+            text-decoration: none;
+            transition: 0.2s ease;
+        }
+    </style>
+</head>
+<body>
+<Header/>
+<main>
+    <section>
+        <h3>タグ一覧</h3>
+        <ul>
+            {
+                postTags.map(tag => (
+                        <li>
+                            <a href=`/blog/tags/${tag.name}/`>
+                                {tag.name} ({tag.posts.length})
+                            </a>
+                        </li>
+                ))
+            }
+        </ul>
+    </section>
+</main>
+<Footer/>
+</body>
+</html>
