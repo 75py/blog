@@ -6,7 +6,8 @@ heroImage: '../../../../images/categories/android.png'
 ---
 
 DroidKaigi 2023でセッションを見たり、感想を書いたりするスプレッドシートテンプレートを作った。  
-テンプレートと言っても、単にセッションの一覧を作っただけ。コピーして使ってください。
+テンプレートと言っても、単にセッションの一覧を作っただけ。I列以降にメンバーごとの感想を書いていく運用を想定。  
+コピーして使ってください。
 
 https://docs.google.com/spreadsheets/d/1m3S1C3WoDqoLfUZwkmcfV78k25Pi4ksLfqB7Sxe9Zio/edit#gid=0
 
