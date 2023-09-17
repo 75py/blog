@@ -8,7 +8,7 @@ import { Image } from 'astro:assets';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, tags } = Astro.props;
 ---
 
 <html lang="ja">
@@ -52,6 +52,29 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+
+			ul#tags-list {
+				list-style-type: none;
+				display: flex;
+				justify-content: center;
+				margin: 1em 0;
+				padding: 0;
+			}
+			ul#tags-list li {
+				margin: 0 0.5em;
+				border: 1px solid rgb(var(--gray));
+				border-radius: 1em;
+				padding: 0;
+			}
+			ul#tags-list li a {
+				display: inline-block;
+				padding: 0.3em 1em;
+				color: rgb(var(--gray));
+				text-decoration: none;
+			}
+			ul#tags-list li a:hover {
+				color: rgb(var(--gray-dark));
+			}
 		</style>
 	</head>
 
@@ -64,6 +87,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				</div>
 				<div class="prose">
 					<div class="title">
+						<h1>{title}</h1>
 						<div class="date">
 							<FormattedDate date={pubDate} />
 							{
@@ -74,7 +98,16 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 								)
 							}
 						</div>
-						<h1>{title}</h1>
+
+						{tags && tags.length > 0 &&
+							<ul id="tags-list">
+								{tags.map((tag) => (
+									<li>
+										<a href={`/blog/tags/${tag}/`}>{tag}</a>
+									</li>
+								))}
+							</ul>
+						}
 						<hr />
 					</div>
 					<slot />
