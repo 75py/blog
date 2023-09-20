@@ -1,8 +1,7 @@
 ---
 title: 'Pixel Watch（モバイルSuica）のチャージ時に出る OR-VIDA-01 エラーの対処法'
 description: ''
-pubDate: '2023-09-18'
-updatedDate: '2023-09-20'
+pubDate: '2023-09-20'
 heroImage: '../../../../images/categories/android.png'
 tags:
   - Pixel Watch
