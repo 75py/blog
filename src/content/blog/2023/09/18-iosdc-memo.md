@@ -1,7 +1,8 @@
 ---
-title: 'iOSDC 2023 感想メモ'
+title: 'iOSDC Japan 2023 day0 感想メモ'
 description: ''
 pubDate: '2023-09-18'
+updatedDate: '2023-09-20'
 heroImage: '../../../../images/categories/ios.png'
 tags:
   - iOSDC
@@ -109,5 +110,71 @@ https://fortee.jp/iosdc-japan-2023/proposal/c9247098-377a-4288-be71-5e210d330042
   - LocationButton
     - iOS15以上で使用可能
       - ズコー
+- ATT
+  - App Tracking Transparency
+  - IDFAとかトラッキングとか
+- 写真・動画
+  - PHPickerViewController
+    - iOS14から
+  - PhotoPicker
+    - iOS16からはSwiftUIから直接使える
+- 連絡先
+  - CNContactPickerViewController
+- Appプライバシーレポート
+  - 設定アプリから確認できる
+  - JSONとしてエクスポートできる
+  - iOS15から
+- プライバシーラベル
+  - Privacy Manifests
+    - WWDC23で発表された
+    - サードバーティーSDK開発者がPrivacyInfo.xcprivacyを提供する
+  - Privacy report
+    - プロジェクト内の全てのPrivacy Manifestsを集約したもの
+    - Xcode15で、App Store向けビルドの際に出力できる
+    - これを元にプライバシーラベルを入力すると良い
+- Required Reason API
+  - 利用する場合、その理由をPrivacy Manifests上で1つ以上選択する必要がある
+  - 2023年秋、選択していないと開発者に通知がいく
+  - 2024年春、新規/既存アプリで選択が義務付けられる
+  - User defaults APIs も含まれるらしい。えぇ・・・
 
-続きはここから
+うーん、Appleのやりたいことは分からんでもないが。。。という感想だった。
+
+### カンファレンスでネットワークの低レイヤーを学ぶ with Swift by S_Shimotori
+
+https://fortee.jp/iosdc-japan-2023/proposal/bbf04f2d-a82c-44e7-a48c-2da170bebbca
+
+スライドなし。面白そうではあるので、時間があればアーカイブも見たい。
+
+### ステートマシンを活用したWebView-ネイティブ間連携へのアプローチ by marcy731
+
+https://fortee.jp/iosdc-japan-2023/proposal/8a41d745-7906-41ca-b05d-c6551c1d23a8
+
+スライドなし。アーカイブ見るか。。。確かにWebViewは複雑になりがちなので、アプローチとしては良いかもしれない。
+
+### watchOS開発最前線 by 蔀
+
+https://fortee.jp/iosdc-japan-2023/proposal/251cd59e-46f8-4445-a8a5-df43bc8a2add
+
+多分自分が作ることはないだろう。厳かに省略・・・
+
+
+### SharePlayの歴史と進化 - そしてvisionOSへ by 所 友太
+
+https://fortee.jp/iosdc-japan-2023/proposal/f304e4d7-b436-4f30-85eb-21721c465715
+
+SharePlayねぇ。。。Androidユーザーとしてはピンとこないけど、iOSユーザーは使う機能なのかな。  
+iPhone 15 Proが届いたら試してみる。
+
+### Swizzling Swizzling Swizzling by taiki komaba
+
+https://fortee.jp/iosdc-japan-2023/proposal/3c95a68e-b5c5-4e50-a3cc-fc4bcfc761a4
+
+スライドなし。Method Swizzlingはちょっとした黒魔術だと思ってたけどどうなのかな。アーカイブ見る。
+
+### UIKit ベースの Custom UIContentConfiguration API を用いた複雑なカスタムセルの作り方 by shimastripe
+
+https://fortee.jp/iosdc-japan-2023/proposal/e0cf0ad8-5334-49bf-bb13-04286c5e21d7
+
+ややこしいなぁ……。深入りしたくないというのが正直なところだけど、そうもいかないんだろな。  
+必要になったらまた見返そう。
