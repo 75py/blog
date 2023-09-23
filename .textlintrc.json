@@ -1,0 +1,11 @@
+{
+  "plugins": {},
+  "filters": {},
+  "rules": {
+    "abbr-within-parentheses": true,
+    "no-todo": true,
+    "preset-ja-technical-writing": true,
+    "preset-japanese": true,
+    "terminology": true
+  }
+}
