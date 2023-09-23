@@ -1,8 +1,17 @@
 ---
+import '../styles/blog-index.css';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+import { Image } from 'astro:assets';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 5);
 ---
 
 <!DOCTYPE html>
@@ -13,8 +22,22 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>{SITE_TITLE}</h1>
-			<p>{SITE_DESCRIPTION}</p>
+			<ul>
+				{
+					posts.map((post, index) => (
+						<li>
+							<a href={`/blog/${post.slug}/`}>
+								{index == 0 && post.data.heroImage && <Image src={post.data.heroImage} alt="" width={360} height={180} />}
+								<h4 class="title">{post.data.title}</h4>
+								<p class="date">
+									<FormattedDate date={post.data.pubDate} />
+								</p>
+							</a>
+						</li>
+					))
+				}
+			</ul>
+			<p style="text-align: end"><a href="/blog/">記事一覧へ</a></p>
 		</main>
 		<Footer />
 	</body>
