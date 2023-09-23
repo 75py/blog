@@ -16,5 +16,10 @@ export default defineConfig({
 			},
 		})
 	],
-	trailingSlash: 'ignore'
+	trailingSlash: 'ignore',
+	vite: {
+		optimizeDeps: {
+			exclude: ['@resvg/resvg-js']
+		}
+	},
 });
