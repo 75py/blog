@@ -3,7 +3,7 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} 75py here. All rights reserved.
+	<p class="privacy-policy-link"><a href="/privacy-policy/">Privacy Policy</a></p>
 	<div class="social-links">
 		<a href="https://twitter.com/dev75py" target="_blank">
 			<span class="sr-only">Follow dev75py on X(Twitter)</span>
@@ -30,6 +30,7 @@ const today = new Date();
 			>
 		</a>
 	</div>
+	<p>&copy; {today.getFullYear()} 75py here. All rights reserved.</p>
 </footer>
 <style>
 	footer {
@@ -50,5 +51,10 @@ const today = new Date();
 	}
 	.social-links a:hover {
 		color: rgb(var(--gray-dark));
+	}
+
+	.privacy-policy-link a {
+		text-decoration: none;
+		color: rgb(var(--gray));
 	}
 </style>
