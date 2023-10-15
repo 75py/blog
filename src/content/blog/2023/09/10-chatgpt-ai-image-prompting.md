@@ -22,6 +22,6 @@ DALL-Eで画像を生成する場合、基本的には英語でプロンプト�
 > A gleaming AI chip, with the letters 'AI' illuminated in neon, floating amidst the skyscrapers of futuristic Tokyo, where holographic displays and bustling drones paint the skyline.
 
 出力されたものがこちら。
-![](../../../../images/categories/ai.png)
+![](../../../../images/categories/ai_202309.png)
 
 プロンプトの作成にコツが必要なのは相変わらずだが、ChatGPTにお願いすればある程度良い感じにしてくれるので、自分で書くよりは楽だと思う。

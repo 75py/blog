@@ -122,7 +122,7 @@ console.dir(posts)
                 posts.map((post, index) => (
                         <li>
                             <a href={`/blog/${post.slug}/`}>
-                                {index == 0 && post.data.heroImage && <Image src={post.data.heroImage} alt="" width={360} height={180} />}
+                                {index == 0 && post.data.heroImage && <Image src={post.data.heroImage} alt="" width={360} height={189} />}
                                 <h4 class="title">{post.data.title}</h4>
                                 <p class="date">
                                     <FormattedDate date={post.data.pubDate} />
