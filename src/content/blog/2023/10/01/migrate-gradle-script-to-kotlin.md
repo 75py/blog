@@ -6,6 +6,8 @@ heroImage: '../../../../../images/categories/programming.png'
 tags:
   - Android
   - ChatGPT
+  - OpenAI
+  - AI
 ---
 
 ChatGPTを使う記事を1つ書いた。

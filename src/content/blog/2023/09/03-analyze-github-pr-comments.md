@@ -6,6 +6,7 @@ heroImage: '../../../../images/categories/programming.png'
 tags:
   - GitHub
   - ChatGPT
+  - OpenAI
   - AI
 ---
 

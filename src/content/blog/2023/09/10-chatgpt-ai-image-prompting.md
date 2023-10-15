@@ -6,6 +6,8 @@ heroImage: '../../../../images/categories/ai.png'
 tags:
   - ChatGPT
   - DALL-E
+  - OpenAI
+  - AI
 ---
 
 ### 参考にしたページ

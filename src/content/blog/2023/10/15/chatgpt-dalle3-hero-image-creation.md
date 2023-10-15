@@ -6,6 +6,8 @@ heroImage: ../../../../../images/categories/ai.png
 tags:
   - ChatGPT
   - DALL-E
+  - OpenAI
+  - AI
 ---
 
 つい1ヶ月前に [ChatGPTでプロンプトを用意して、DALL-Eで画像を作ってみた](https://www.nagopy.com/blog/2023/09/10-chatgpt-ai-image-prompting/) という記事を書いた。  
