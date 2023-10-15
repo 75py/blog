@@ -9,7 +9,12 @@ export default defineConfig({
 	site: 'https://www.nagopy.com/',
 	integrations: [
 		mdx(),
-		sitemap(),
+		sitemap({
+			filter(page) {
+				const pageUrl = new URL(page);
+				return !pageUrl.pathname.match(/^\/blog\/tags\/.+/);
+			}
+		}),
 		partytown({
 			config: {
 				forward: ["dataLayer.push"],
