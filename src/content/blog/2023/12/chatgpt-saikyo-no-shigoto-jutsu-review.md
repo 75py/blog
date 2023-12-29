@@ -12,7 +12,7 @@ tags:
 ### 本の情報
 
 - [ChatGPT最強の仕事術](https://www.amazon.co.jp/dp/4866802367/)
-- TechBooster
+- 池田 朋弘
 - 2023/8/20 初版
 
 ### おすすめ度
