@@ -50,8 +50,6 @@ h1 {
 }
 h2 {
 	font-size: 1.15em;
-	padding-bottom: 5px;
-	border-bottom: lightgray 1px solid;
 }
 h3 {
 	font-size: 1.1em;
@@ -147,4 +145,24 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto seperate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+article h2 {
+	padding-bottom: 5px;
+	border-bottom: grey thick solid;
+}
+article h3 {
+	padding-bottom: 5px;
+	border-bottom: darkgray medium solid;
+}
+article h4 {
+	padding-bottom: 5px;
+	border-bottom: lightgray thin dashed;
+}
+article h5 {
+	padding-bottom: 5px;
+	border-bottom: lightgray thin dotted;
+}
+article h3 + p, article h4 + p, article h5 + p {
+	margin-top: 0;
 }
