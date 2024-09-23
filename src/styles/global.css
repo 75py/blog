@@ -50,6 +50,8 @@ h1 {
 }
 h2 {
 	font-size: 1.15em;
+	padding-bottom: 5px;
+	border-bottom: lightgray 1px solid;
 }
 h3 {
 	font-size: 1.1em;
