@@ -1,5 +1,5 @@
 ---
-import {CollectionEntry, getCollection} from 'astro:content';
+import {getCollection} from 'astro:content';
 import Footer from "../../../components/Footer.astro";
 import FormattedDate from "../../../components/FormattedDate.astro";
 import BaseHead from "../../../components/BaseHead.astro";
@@ -11,25 +11,19 @@ export async function getStaticPaths() {
         .flatMap((post) => post.data.tags)
         .filter((tag, index, self) => self.indexOf(tag) === index)
         .filter((tag) => tag !== undefined);
-    console.dir(tags);
     return tags.map((tag) => ({
         params: {slug: tag},
     }));
 }
-type Props = CollectionEntry<'blog'>;
 
 const tag = Astro.params.slug;
 
-console.dir(Astro);
-console.dir(tag);
-
-const posts: CollectionEntry<any> =
+const posts =
     (await getCollection('blog'))
         .filter((p) => p.data.tags.includes(tag))
         .sort(
             (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
         );
-console.dir(posts)
 ---
 
 
@@ -62,10 +56,10 @@ console.dir(posts)
             text-align: center;
         }
         ul li:first-child img {
-        //width: 100%;
+            /* width: 100%; */
         }
         ul li:first-child .title {
-        //font-size: 2.369rem;
+            /* font-size: 2.369rem; */
         }
         ul li img {
             margin-bottom: 0.5rem;
@@ -102,7 +96,7 @@ console.dir(posts)
                 margin-bottom: 0;
             }
             ul li:first-child .title {
-            //font-size: 1.563em;
+                /* font-size: 1.563em; */
             }
         }
 
@@ -121,7 +115,7 @@ console.dir(posts)
             {
                 posts.map((post, index) => (
                         <li>
-                            <a href={`/blog/${post.slug}/`}>
+                            <a href={`/blog/${post.id}/`}>
                                 {index == 0 && post.data.heroImage && <Image src={post.data.heroImage} alt="" width={360} height={189} />}
                                 <h4 class="title">{post.data.title}</h4>
                                 <p class="date">
@@ -139,4 +133,3 @@ console.dir(posts)
 <Footer />
 </body>
 </html>
-
