@@ -83,6 +83,20 @@ p {
 .prose h2 + h3, .prose h3 + h4, .prose h4 + h5, .prose h5 + h6 {
 	margin-top: 1em;
 }
+.prose .app-policy-divider {
+	margin: 3em 0 1.25em;
+	border-top: 2px solid rgba(var(--gray), 35%);
+}
+.prose .app-policy-heading {
+	margin: 0 0 1em;
+	padding: 0.75em 1em;
+	border: 0;
+	border-left: 6px solid var(--accent);
+	border-radius: 0 8px 8px 0;
+	background-color: rgba(var(--gray-light), 65%);
+	color: var(--accent-dark);
+	font-size: 1.3em;
+}
 textarea {
 	width: 100%;
 	/*font-size: 16px;*/
